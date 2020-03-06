@@ -1,7 +1,7 @@
 ---
 title: "Chicken Feed"
-author: "put your name here"
-date: "2/29/2020"
+author: "Teresa Nocera"
+date: "3/03/2020"
 output: html_document
 ---
 
@@ -37,8 +37,28 @@ attach(chickenData)
 
 <!-- plot chicken weight against each of the three explanatory variables.  weight against a categorial varable is a boxplot, weight against a numerical variable is a scatter plot !-->
 
+boxplot of weight based on feed
+
+```{r}
+plot(weight~feed,data=chickenData)
+```
+
+It appears that the feed type has an effect. Sunflower the best?
+
+```{r}
+plot(weight~speed,data=chickenData)
+```
+
+There does not appear to be any relationship between speed and weight.
+
+
+
 
 ### Numerical summary
+
+```{r}
+plot(weight~sex,data=chickenData)
+```
 
 
 
