@@ -57,9 +57,9 @@ There does not appear to be any relationship between speed and weight.
 ### Numerical summary
 
 ```{r}
-plot(weight~sex,data=chickenData)
+summary(chickenData)
 ```
-
+This is a summary of all the data in chickenData
 
 
 ### Inference -- Analysis of Variance
